@@ -1,0 +1,136 @@
+title{
+  display:flex;
+  height:500;
+  justify-content: center;
+  align-items: middle;
+  font-size: 100px;
+  color:purple;
+}
+
+div{
+  display: block;
+}
+
+body{
+  background-color: #FFE5E5;
+}
+
+.board{
+  position: fixed;
+  width=50%;
+  left:50%;
+  right:50%;
+  top: 16%;
+  display:grid;
+  grid-template-columns: 150px 150px 150px;
+  align-items: middle;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.small-grid{
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  border-width: 1px 1px 1px 3px;
+  border-color: #000 #000 #000 #000;
+  border-style: solid solid solid solid;
+}
+
+.grid-item {
+  background-color: rgba(229,204, 255);
+  border: 1px solid rgba(.5, 2, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item:hover {
+  background-color: #6600CC;
+  border: 1px solid rgba(.5, 2, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+button-container{
+  font-size: 16px;
+  width: 10px;
+  margin: 25px auto;
+  color:#660033; }
+
+button{
+  display:block;
+  background-color: #FFCCFF;
+  color:#660033;
+  margin-top: 80px;
+  margin-left: 20px;
+	font-size: 100px;
+	line-height:1.5;
+}
+time{
+  position: fixed;
+  left:65%;
+  top: 25%;
+  background-color: #FFE5E5;
+  color:#000000;
+  border-style: solid;
+  border-color: #000000;
+  font-size: 120px;
+}
+give-up-button{
+  visibility: hidden;
+  position: fixed;
+  left:65%;
+  top: 50%;
+  background-color: #FFCCFF;
+  color:#660033;
+  border-style: solid;
+	font-size: 80Px;
+	line-height:1.5;
+}
+give-up-button.show{
+  visibility: visible;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 600px;
+  margin-left: -300px;
+  background-color: #330066;
+  color: #FFF;
+  text-align: center;
+  border-radius: 15px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 50px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}

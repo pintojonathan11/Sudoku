@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<title> Sudoku </title>
+<button-container>
+  <button style="margin-top:130px;" id="startButton"> Start? </button>
+  <button id="doneButton"> Done? </button>
+</button-container>
+<div class="board">
+    <div id="outer11" class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+    <div id="outer12"class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+    <div id="outer13"class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+    <div id="outer21"class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+    <div id="outer22"class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+    <div id="outer23"class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+    <div id="outer31"class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+    <div id="outer32"class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+    <div id="outer33"class="small-grid">
+      <div id="inner11"contenteditable="true"class="grid-item"> </div>
+      <div id="inner12"contenteditable="true"class="grid-item"> </div>
+      <div id="inner13"contenteditable="true"class="grid-item"> </div>
+      <div id="inner21"contenteditable="true"class="grid-item"> </div>
+      <div id="inner22"contenteditable="true"class="grid-item"> </div>
+      <div id="inner23"contenteditable="true"class="grid-item"> </div>
+      <div id="inner31"contenteditable="true"class="grid-item"> </div>
+      <div id="inner32"contenteditable="true"class="grid-item"> </div>
+      <div id="inner33"contenteditable="true"class="grid-item"> </div>
+    </div>
+  </div>
+<time id="timer">00:00:00 </time>
+<give-up-button id="giveUpButton"> Give Up? </give-up-button>
+
+<div id="snackbar">Congratulations: You Won!</div>
+
+</body>
+
+</html>
