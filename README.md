@@ -1,1 +1,1 @@
-"# Sudoku" 
+The program uses JavaScript, CSS, and Html. It also creates a random Sudoku board and if you haven't found the solution in 10 minutes, it will allow you to give up and it will show you the correct solution. 
